@@ -2,7 +2,9 @@ package il.co.sahar.blogs.ACTIVITIES;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import il.co.sahar.blogs.R;
@@ -16,7 +18,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initializeViews();
     }
 
@@ -29,6 +30,12 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void setListeners() {
-        // Add listener to btnAddPost
+        //no need
     }
+    public void addPost(View view)
+    {
+        Intent intent=new Intent(this,BlogPostActivity.class);
+        startActivity(intent);
+    }
+
 }
