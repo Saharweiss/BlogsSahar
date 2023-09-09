@@ -21,52 +21,52 @@
 
     <EditText
         android:id="@+id/Authorid"
-        android:layout_width="245dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginBottom="63dp"
+        android:layout_width="253dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="8dp"
         android:hint="Author"
-        app:layout_constraintBottom_toTopOf="@+id/Dateid"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/Dateid"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Titleid"
-        android:layout_width="245dp"
-        android:layout_height="42dp"
+        android:id="@+id/editText2"
+        android:layout_width="249dp"
+        android:layout_height="56dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="7dp"
         android:hint="Title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/Dateid"
-        android:layout_width="246dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="327dp"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:hint="Date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Titleid"
+        app:layout_constraintBottom_toTopOf="@+id/Dateid"
+        app:layout_constraintEnd_toEndOf="@+id/Dateid"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Authorid" />
 
     <EditText
-        android:id="@+id/Contentid"
-        android:layout_width="393dp"
-        android:layout_height="292dp"
+        android:id="@+id/Dateid"
+        android:layout_width="248dp"
+        android:layout_height="58dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="416dp"
+        android:layout_marginBottom="23dp"
+        android:hint="Date"
+        app:layout_constraintBottom_toTopOf="@+id/Contentid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/Contentid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
         android:gravity="top"
         android:hint="Content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Dateid" />
 </androidx.constraintlayout.widget.ConstraintLayout>
